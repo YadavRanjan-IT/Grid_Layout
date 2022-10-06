@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Melno;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  gap: 2rem 1rem;
+}
+
+li {
+  background: grey;
+  text-align: center;
+  padding: 1rem;
+  list-style-type: none;
+}
