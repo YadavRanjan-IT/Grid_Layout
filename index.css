@@ -10,14 +10,33 @@ body {
 
 ul {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 1fr 2fr 1fr;
-  gap: 2rem 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 2rem 3rem;
+  margin: 5%;
 }
 
 li {
   background: grey;
   text-align: center;
-  padding: 1rem;
   list-style-type: none;
+}
+
+.list-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 1/5;
+  background: cyan;
+}
+
+.list-10 {
+  grid-column: 1/-1;
+  background: orange;
+  grid-row: 8/-1;
+}
+
+img {
+  display: block;
+  object-fit: contain;
+  width: 100%;
 }
